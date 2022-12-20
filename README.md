@@ -96,7 +96,7 @@ def vae_loss(recon, x, mu, log_var):
 上面首先使用 VAE 的编码器将样本图像编码为 latent variables，然后使用 VAE 的解码器生成数字图像，再使用model.load_state_dict() 加载已保存的模型。最后，使用已加载的模型生成数字图像并显示。效果如下图：
 
 <div align=center>
-![生成手写数字5](./generate_num/5.png)
+<img src="./generated_img/5.png"/>
 </div>
 
 上面模型的生成性能可能不是最好的，如果我们想改变 VAE 模型的表现，例如生成更加细腻、清晰的图像，则可能需要再次训练模型。我们可以通过调整训练参数，例如批次大小、学习率等来实现。
